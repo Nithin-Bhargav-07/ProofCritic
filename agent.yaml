@@ -6,6 +6,8 @@ description: "A panel of three specialist AI reviewers that tears your research 
 model:
   preferred: "google:gemini-2.5-flash"
   temperature: 0.4
+  config:
+    timeout: 60000
 
 skills:
   - statistical-review
@@ -22,7 +24,7 @@ agents:
     role: domain-expert
   - name: ms-clarity
     path: agents/ms-clarity
-    role: writing-coach
+    role: writing-review 
 
 tags:
   - research
@@ -31,13 +33,4 @@ tags:
   - multi-agent
   - gitagent-hackathon
 
-metadata:
-  author: "ScholarMind"
-  homepage: "https://github.com/your-handle/scholar-mind"
-  use_case: >
-    Drop any research paper (as markdown or plain text) into this repo,
-    commit it, and receive a full structured peer review from three specialist
-    agents. Each reviewer has a distinct personality, expertise, and agenda.
-    The orchestrator synthesizes their findings into a final verdict.
-  input: "paper.md — your manuscript in markdown format"
-  output: "reviews/review-<timestamp>.md — structured multi-panel review report"
+
