@@ -1,0 +1,6 @@
+spec_version: "0.1.0"
+name: prof-factcheck
+model:
+  preferred: "google:gemini-2.5-flash"
+  config:
+    timeout: 60000

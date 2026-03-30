@@ -8,6 +8,9 @@ model:
   temperature: 0.4
 
 skills:
+  - statistical-review
+  - fact-check
+  - writing-review
   - synthesize-report
 
 agents:
