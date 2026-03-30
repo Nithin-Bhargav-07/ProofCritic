@@ -10,10 +10,10 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "dependencies": {
-    "gitclaw": "^1.1.8"
-  },
   "devDependencies": {
     "clawless": "^0.4.13"
+  },
+  "dependencies": {
+    "gitclaw": "^1.1.6"
   }
 }
