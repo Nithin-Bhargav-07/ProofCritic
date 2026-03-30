@@ -3,11 +3,12 @@ name: scholar-mind
 version: 1.0.0
 description: "A panel of three specialist AI reviewers that tears your research paper apart — so the real reviewers don't have to."
 
+timeout: 60000
+
 model:
   preferred: "google:gemini-2.5-flash"
   temperature: 0.4
-  config:
-    timeout: 60000
+
 
 skills:
   - statistical-review
