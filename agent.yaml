@@ -1,0 +1,40 @@
+spec_version: "0.1.0"
+name: scholar-mind
+version: 1.0.0
+description: "A panel of three specialist AI reviewers that tears your research paper apart — so the real reviewers don't have to."
+
+model:
+  preferred: claude-sonnet-4-20250514
+  temperature: 0.4
+
+skills:
+  - synthesize-report
+
+agents:
+  - name: dr-rigor
+    path: agents/dr-rigor
+    role: statistical-reviewer
+  - name: prof-factcheck
+    path: agents/prof-factcheck
+    role: domain-expert
+  - name: ms-clarity
+    path: agents/ms-clarity
+    role: writing-coach
+
+tags:
+  - research
+  - peer-review
+  - academic
+  - multi-agent
+  - gitagent-hackathon
+
+metadata:
+  author: "ScholarMind"
+  homepage: "https://github.com/your-handle/scholar-mind"
+  use_case: >
+    Drop any research paper (as markdown or plain text) into this repo,
+    commit it, and receive a full structured peer review from three specialist
+    agents. Each reviewer has a distinct personality, expertise, and agenda.
+    The orchestrator synthesizes their findings into a final verdict.
+  input: "paper.md — your manuscript in markdown format"
+  output: "reviews/review-<timestamp>.md — structured multi-panel review report"
