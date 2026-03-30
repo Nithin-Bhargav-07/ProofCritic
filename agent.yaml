@@ -4,7 +4,7 @@ version: 1.0.0
 description: "A panel of three specialist AI reviewers that tears your research paper apart — so the real reviewers don't have to."
 
 model:
-  preferred: claude-sonnet-4-20250514
+  preferred: "anthropic:claude-sonnet-4-5-20250929"
   temperature: 0.4
 
 skills:
