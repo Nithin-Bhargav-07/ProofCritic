@@ -12,8 +12,6 @@ Built for the **GitAgent Hackathon**.
 
 ProofCritic (powered by the **ScholarMind** orchestrator) is a parallel multi-agent AI system. Instead of relying on a single prompt to review a complex academic paper, it dispatches three highly specialized AI sub-agents to analyze the text simultaneously. 
 
-By leveraging the massive 1,000,000 token context window of Google Gemini, all three agents process the paper in parallel and stream their findings back to the orchestrator, which synthesizes a final, comprehensive peer-review report.
-
 ### The Review Panel
 *  **ScholarMind** (Orchestrator) - Manages the pipeline and synthesizes the final verdict.
 *  **Dr. Rigor** - Scrutinizes statistical analysis, methodology, and sample sizes.
