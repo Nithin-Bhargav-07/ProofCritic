@@ -1,19 +1,30 @@
 {
-  "name": "scholar-agent",
+  "name": "scholar-mind",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A panel of three AI peer reviewers that tears your research paper apart — so the real reviewers don't have to.",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
-    "clawless": "^0.4.13"
+    "start": "node src/index.js",
+    "review": "node src/index.js",
+    "validate": "node src/validate.js"
   },
   "dependencies": {
-    "gitclaw": "^1.1.6"
-  }
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@google/generative-ai": "^0.24.1",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "gitagent",
+    "peer-review",
+    "research",
+    "ai-agent",
+    "hackathon"
+  ],
+  "license": "MIT"
 }
