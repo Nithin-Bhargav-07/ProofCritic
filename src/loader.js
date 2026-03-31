@@ -1,7 +1,7 @@
 /**
  * src/loader.js
  * Reads agent.yaml, SOUL.md, RULES.md from any agent directory.
- * No external yaml library needed — uses a simple built-in parser.
+ * No external yaml library needed â uses a simple built-in parser.
  */
 
 import fs from 'fs-extra';

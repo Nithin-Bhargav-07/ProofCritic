@@ -64,6 +64,6 @@ This study provides clear evidence that screen time reduces academic performance
 1. Anderson, M., & Jiang, J. (2018). Teens, social media and technology. Pew Research Center.
 2. Twenge, J. M. (2017). iGen. Atria Books.
 3. Rideout, V., & Robb, M. B. (2019). The common sense census: Media use by tweens and teens. Common Sense Media.
-4. Carrier, L. M., Rosen, L. D., Cheever, N. A., & Lim, A. F. (2015). Causes, effects, and practicalities of everyday multitasking. Developmental Review, 35, 64–78.
-5. Johnson, K., & Smith, R. (2019). Smartphone use and academic outcomes: A longitudinal analysis. Journal of Educational Psychology, 111(4), 610–618.
-6. Twenge, J. M., & Campbell, W. K. (2019). Media use is linked to lower psychological well-being. Emotion, 19(6), 1025–1037.
+4. Carrier, L. M., Rosen, L. D., Cheever, N. A., & Lim, A. F. (2015). Causes, effects, and practicalities of everyday multitasking. Developmental Review, 35, 64â78.
+5. Johnson, K., & Smith, R. (2019). Smartphone use and academic outcomes: A longitudinal analysis. Journal of Educational Psychology, 111(4), 610â618.
+6. Twenge, J. M., & Campbell, W. K. (2019). Media use is linked to lower psychological well-being. Emotion, 19(6), 1025â1037.

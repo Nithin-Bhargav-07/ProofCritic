@@ -45,16 +45,16 @@ const REQUIRED = [
 ];
 
 async function validate() {
-  console.log(chalk.bold('\nScholarMind — Validation\n'));
+  console.log(chalk.bold('\nScholarMind â Validation\n'));
   let passed = 0, failed = 0;
 
   for (const [filePath, label] of REQUIRED) {
     const exists = await fs.pathExists(path.join(ROOT, filePath));
     if (exists) {
-      console.log(chalk.green('  ✓ ') + chalk.dim(filePath.padEnd(42)) + label);
+      console.log(chalk.green('  â ') + chalk.dim(filePath.padEnd(42)) + label);
       passed++;
     } else {
-      console.log(chalk.red('  ✗ ') + filePath.padEnd(42) + chalk.red(label + ' — MISSING'));
+      console.log(chalk.red('  â ') + filePath.padEnd(42) + chalk.red(label + ' â MISSING'));
       failed++;
     }
   }
@@ -67,16 +67,16 @@ async function validate() {
 
   console.log('\n' + chalk.bold('  Environment:'));
   console.log(chalk.dim('  Provider: ') + chalk.cyan(provider));
-  console.log((hasKey ? chalk.green('  ✓ ') : chalk.yellow('  ⚠ ')) +
+  console.log((hasKey ? chalk.green('  â ') : chalk.yellow('  â  ')) +
     (keyName ? keyName : 'No key needed (Ollama)') +
-    (hasKey ? ' is set' : ' not set — add to .env before running'));
+    (hasKey ? ' is set' : ' not set â add to .env before running'));
 
-  console.log('\n  ' + '─'.repeat(44));
+  console.log('\n  ' + 'â'.repeat(44));
   if (failed === 0) {
-    console.log(chalk.green.bold(`  ✓ All ${passed} checks passed. ScholarMind is ready.\n`));
+    console.log(chalk.green.bold(`  â All ${passed} checks passed. ScholarMind is ready.\n`));
     console.log('  Run: ' + chalk.cyan('npm run review') + ' (with paper.md in root)\n');
   } else {
-    console.log(chalk.red(`  ✗ ${failed} file(s) missing. Add them and re-run.\n`));
+    console.log(chalk.red(`  â ${failed} file(s) missing. Add them and re-run.\n`));
     process.exit(1);
   }
 }

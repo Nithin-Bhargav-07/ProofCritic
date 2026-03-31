@@ -45,9 +45,9 @@ export async function updateMemory(repoRoot, paperTitle, verdict, rigorReport, f
   // Add row to Review History table
   const flaw = extractFlaw(allReports);
   const row = `| ${today} | ${paperTitle.slice(0, 40)} | ${verdict} | ${flaw} |`;
-  memory = memory.replace('| — | — | — | — |', row);
+  memory = memory.replace('| â | â | â | â |', row);
 
-  // Add learned calibration if pattern hits ≥ 5
+  // Add learned calibration if pattern hits â¥ 5
   for (const pattern of patterns) {
     const m = memory.match(new RegExp(`\\| ${esc(pattern.key)} \\| (\\d+) \\|`));
     if (m && parseInt(m[1]) >= 5) {

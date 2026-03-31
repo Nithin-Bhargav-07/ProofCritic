@@ -17,7 +17,7 @@ export async function runReviewer({ agent, skillPath, paper, brief, knowledge, l
     agent.soul,
     '## Your Hard Rules',
     agent.rules,
-    '## Your Review Skill — Follow These Steps Exactly',
+    '## Your Review Skill â Follow These Steps Exactly',
     skillBody,
     '## Shared Knowledge Base',
     knowledge,
@@ -25,13 +25,13 @@ export async function runReviewer({ agent, skillPath, paper, brief, knowledge, l
     '- Follow the output format defined in your skill exactly',
     '- Cite specific sections, paragraphs, or short phrases for every finding',
     '- Rate every issue: FATAL | MAJOR | MINOR | NOTE',
-    '- Acknowledge genuine strengths — be honest, not performative',
-    '- Every sentence must add information — no padding or filler',
+    '- Acknowledge genuine strengths â be honest, not performative',
+    '- Every sentence must add information â no padding or filler',
   ].join('\n\n');
 
   const user = `## Your Brief for This Paper\n${brief}\n\n## Paper to Review\n${paper}\n\nBegin your review now, following your skill steps one by one.`;
 
-  console.log(color(`  → ${label}`) + chalk.dim(' is reviewing...'));
+  console.log(color(`  â ${label}`) + chalk.dim(' is reviewing...'));
   process.stdout.write(color(`\n  [${label}] `));
 
   let charCount = 0;
@@ -53,7 +53,7 @@ export async function runReviewer({ agent, skillPath, paper, brief, knowledge, l
     return full;
   } catch (err) {
     process.stdout.write(chalk.red(' error\n'));
-    console.error(color(`  ✗ ${label}: `) + err.message);
-    return `### ${label} — Review\n\n*Review failed: ${err.message}*`;
+    console.error(color(`  â ${label}: `) + err.message);
+    return `### ${label} â Review\n\n*Review failed: ${err.message}*`;
   }
 }

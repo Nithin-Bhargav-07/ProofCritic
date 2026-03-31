@@ -18,7 +18,7 @@ export async function chat({ system, user, maxTokens = 2000, onChunk }) {
   }
 }
 
-// ── Anthropic ──────────────────────────────────────────────────────────────
+// ââ Anthropic ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 async function chatAnthropic({ system, user, maxTokens, onChunk }) {
   const { default: Anthropic } = await import('@anthropic-ai/sdk');
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
@@ -38,7 +38,7 @@ async function chatAnthropic({ system, user, maxTokens, onChunk }) {
   return full;
 }
 
-// ── Gemini FREE (1500 req/day) ─────────────────────────────────────────────
+// ââ Gemini FREE (1500 req/day) âââââââââââââââââââââââââââââââââââââââââââââ
 async function chatGemini({ system, user, maxTokens, onChunk }) {
   const apiKey = process.env.GEMINI_API_KEY;
   if (!apiKey) throw new Error('GEMINI_API_KEY not set. Get a free key at aistudio.google.com');
@@ -86,7 +86,7 @@ async function chatGemini({ system, user, maxTokens, onChunk }) {
   return full;
 }
 
-// ── Groq FREE (Llama 3) ────────────────────────────────────────────────────
+// ââ Groq FREE (Llama 3) ââââââââââââââââââââââââââââââââââââââââââââââââââââ
 async function chatGroq({ system, user, maxTokens, onChunk }) {
   const apiKey = process.env.GROQ_API_KEY;
   if (!apiKey) throw new Error('GROQ_API_KEY not set. Get a free key at console.groq.com');
@@ -131,7 +131,7 @@ async function chatGroq({ system, user, maxTokens, onChunk }) {
   return full;
 }
 
-// ── Ollama LOCAL (100% free, no internet) ─────────────────────────────────
+// ââ Ollama LOCAL (100% free, no internet) âââââââââââââââââââââââââââââââââ
 async function chatOllama({ system, user, maxTokens, onChunk }) {
   const baseUrl = process.env.OLLAMA_URL || 'http://localhost:11434';
   const response = await fetch(`${baseUrl}/api/chat`, {
@@ -166,7 +166,7 @@ async function chatOllama({ system, user, maxTokens, onChunk }) {
   return full;
 }
 
-// ── Provider info ──────────────────────────────────────────────────────────
+// ââ Provider info ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 export function getProviderInfo() {
   const map = {
     anthropic: { name: 'Anthropic Claude',    free: false, model: DEFAULT_MODELS.anthropic },

@@ -1,13 +1,14 @@
 spec_version: "0.1.0"
 name: scholar-mind
 version: 1.0.0
-description: "A panel of three specialist AI reviewers that tears your research paper apart — so the real reviewers don't have to."
+description: "A panel of three specialist AI reviewers that tears your research paper apart â so the real reviewers don't have to."
 
 timeout: 60000
 
 model:
-  preferred: "google:gemini-2.5-flash"
+  preferred: google:gemini-2.0-flash
   temperature: 0.4
+  timeout: 30000
 
 
 skills:

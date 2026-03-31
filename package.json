@@ -1,7 +1,7 @@
 {
   "name": "scholar-mind",
   "version": "1.0.0",
-  "description": "A panel of three AI peer reviewers that tears your research paper apart — so the real reviewers don't have to.",
+  "description": "A panel of three AI peer reviewers that tears your research paper apart â so the real reviewers don't have to.",
   "main": "src/index.js",
   "type": "module",
   "scripts": {

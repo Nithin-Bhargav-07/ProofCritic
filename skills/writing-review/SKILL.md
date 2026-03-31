@@ -14,7 +14,7 @@ allowed-tools: Bash Read Write
 3. **Analyze Tone and Clarity:**
    - Scan for overly dense jargon that obfuscates meaning.
    - Flag sentences longer than 35 words or paragraphs that span more than half a page.
-   - Check the Abstract against the "Elevator Pitch Rule" — does it clearly state the problem, method, and conclusion?
+   - Check the Abstract against the "Elevator Pitch Rule" â does it clearly state the problem, method, and conclusion?
 4. **Output Formatting:**
    - Output your findings purely as a markdown list.
    - Provide actionable advice for every flaw (e.g., "Break this run-on sentence at line 42 into two distinct thoughts").

@@ -41,7 +41,7 @@ ${factReport}
 ${clarityReport}
 
 Now produce the complete final ScholarMind Review Report following your output template exactly.
-Cross-reference findings, note any consensus (◆◆) or two-reviewer agreement (◆), determine the verdict using your decision tree, and write the Author Action List.`;
+Cross-reference findings, note any consensus (ââ) or two-reviewer agreement (â), determine the verdict using your decision tree, and write the Author Action List.`;
 
   console.log(chalk.dim('\n  Synthesizing...\n'));
   process.stdout.write(chalk.bold('  [ScholarMind] '));
