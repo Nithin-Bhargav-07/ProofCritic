@@ -78,7 +78,7 @@ Copy any research paper or abstract and save it as paper.md in the project root.
 ### 6. Validation
 To validate the GitAgent architecture setup:
 ```bash
-npx @open-gitagent/gitagent validate
+npm run validate
 ```
 
 ### 7. Run the Panel
