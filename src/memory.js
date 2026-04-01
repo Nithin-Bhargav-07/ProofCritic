@@ -1,9 +1,3 @@
-/**
- * src/memory.js
- * Updates memory/patterns.md after every completed review.
- * Tracks recurring issue types so ScholarMind gets smarter over time.
- */
-
 import fs from 'fs-extra';
 import path from 'path';
 
