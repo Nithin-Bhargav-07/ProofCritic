@@ -1,9 +1,3 @@
-/**
- * src/synthesizer.js
- * Takes the three reviewer reports and synthesizes a single final
- * editorial report with a verdict, ranked issues, and action list.
- */
-
 import chalk from 'chalk';
 import { chat } from './llm.js';
 
