@@ -6,8 +6,6 @@
 
 > A multi-perspective AI agent designed to simulate the academic peer review process by critically analyzing research papers for methodological soundness, factual accuracy, clarity of presentation, and scholarly contribution.
 
-Built for the **GitAgent Hackathon**.
-
 ##  Overview
 
 ProofCritic (powered by the **ScholarMind** orchestrator) is a parallel multi-agent AI system. Instead of relying on a single prompt to review a complex academic paper, it dispatches three highly specialized AI sub-agents to analyze the text simultaneously. 
