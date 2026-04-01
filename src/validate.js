@@ -1,9 +1,5 @@
 #!/usr/bin/env node
-/**
- * src/validate.js
- * Validates the ScholarMind gitagent repo structure.
- * Run with: npm run validate
- */
+
 
 import fs from 'fs-extra';
 import path from 'path';
