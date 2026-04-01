@@ -1,16 +1,9 @@
-/**
- * src/reviewer.js
- * Runs a single reviewer sub-agent (Dr. Rigor, Prof. Factcheck, or Ms. Clarity)
- * against the paper and streams the response.
- */
-
 import fs from 'fs-extra';
 import chalk from 'chalk';
 import { chat } from './llm.js';
 
 export async function runReviewer({ agent, skillPath, paper, brief, knowledge, label, color }) {
   const skillRaw = await fs.readFile(skillPath, 'utf8');
-  // Strip YAML frontmatter (--- ... ---) to get just the instructions
   const skillBody = skillRaw.replace(/^---[\s\S]*?---\n/, '').trim();
 
   const system = [
