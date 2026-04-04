@@ -1,32 +1,24 @@
 spec_version: "0.1.0"
-name: scholar-mind
+name: proof-critic
 version: 1.0.0
-description: "A panel of three specialist AI reviewers that tears your research paper apart â so the real reviewers don't have to."
-
-timeout: 60000
+description: "A multi-agent AI peer review panel that simulates an academic review board — statistical review, fact-checking, and writing assessment in parallel."
 
 model:
-  preferred: google:gemini-2.0-flash
-  temperature: 0.4
-  timeout: 30000
-
+  preferred: gemini-2.0-flash
 
 skills:
+  - synthesize-report
   - statistical-review
   - fact-check
   - writing-review
-  - synthesize-report
 
 agents:
-  - name: dr-rigor
-    path: agents/dr-rigor
-    role: statistical-reviewer
-  - name: prof-factcheck
-    path: agents/prof-factcheck
-    role: domain-expert
-  - name: ms-clarity
-    path: agents/ms-clarity
-    role: writing-reviewer 
+  dr-rigor:
+    description: "Statistical and methodological reviewer"
+  prof-factcheck:
+    description: "Domain expert and citation fact-checker"
+  ms-clarity:
+    description: "Writing coach and structure reviewer"
 
 tags:
   - research
@@ -34,5 +26,3 @@ tags:
   - academic
   - multi-agent
   - gitagent-hackathon
-
-
