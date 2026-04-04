@@ -1,3 +1,5 @@
 node_modules/
-dist/
-.gitagent/
+.env
+*.log
+memory/past-reviews/*-paper.md
+reviews/
